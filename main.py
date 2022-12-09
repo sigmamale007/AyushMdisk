@@ -28,18 +28,18 @@ async def start_handler(_, event: Message):
 	await event.reply_photo("https://telegra.ph/file/2b160d9765fe080c704d2.png",
                                 caption=Config.START_MSG.format(event.from_user.mention),
                                 reply_markup=InlineKeyboardMarkup([
-                                    [InlineKeyboardButton("🔺 Donate us 🔺", url="https://p.paytm.me/xCTH/vo37hii9")],
-                                    [InlineKeyboardButton("⚡️ LazyDeveloper ⚡️", url="https://t.me/LazyDeveloper")],
-                                    [InlineKeyboardButton("🤒Help", callback_data="Help_msg"),
-                                    InlineKeyboardButton("🦋About", callback_data="About_msg")]]))
+                                    [InlineKeyboardButton("🔺 Our Request Group 🔺", url="https://t.me/blackest_harbour")],
+                                    [InlineKeyboardButton("📽️ Files Request Group🎦", url="https://t.me/z_harbour_files")],
+                                    [InlineKeyboardButton("ℹ️ Help ℹ️", callback_data="Help_msg"),
+                                    InlineKeyboardButton("💾 About 👨‍💻", callback_data="About_msg")]]))
 
 @Bot.on_message(filters.private & filters.command("help"))
 async def help_handler(_, event: Message):
 
     await event.reply_text(Config.ABOUT_HELP_TEXT.format(event.from_user.mention),
         reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Updates", url="https://t.me/LazyDeveloper"),
-             InlineKeyboardButton("Support Group", url="https://t.me/LazyPrincessSupport"), 
+            [InlineKeyboardButton("Our Request Group", url="https://t.me/blackest_harbour"),
+             InlineKeyboardButton("Files Request Group", url="https://t.me/z_harbour_files"), 
              InlineKeyboardButton("About", callback_data="About_msg")]
         ])
     )
@@ -48,7 +48,7 @@ async def help_handler(_, event: Message):
 async def inline_handlers(_, event: Message):
     if event.text == '/start':
         return
-    answers = f'**📂 Hunts For ➠ {event.text} \n⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟤\n🔊\n➠ Type Only Movie Name With Correct Spelling. Dont type Bhejo, Bhej Do, send me etc...✍️\n➠ Add Year For Better Result.🗓️\n⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟤\n\n**'
+    answers = f'**📂 Hunts For ➠ {event.text} \n⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟤\n🔊\n➠ Type Only Movie Name With Correct Spelling...✍️\n➠Else Type In CAPITAL LETTERS 🗓️\n⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟥⟤\n\n**'
     async for message in User.search_messages(chat_id=Config.CHANNEL_ID, limit=50, query=event.text):
         if message.text:
             thumb = None
@@ -57,10 +57,10 @@ async def inline_handlers(_, event: Message):
             if "|||" in message.text:
                 f_text = message.text.split("|||", 1)[0]
                 msg_text = message.text.html.split("|||", 1)[0]
-            answers += f'**🎞 Movie Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 Download URLs ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\nLink Will Auto Delete In 35Sec...⏰\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
+            answers += f'**🎞 Movie Title ➠ ' + '' + f_text.split("\n", 1)[0] + '' + '\n\n📜 Download URLs ➠ ' + '' + f_text.split("\n", 2)[-1] + ' \n\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\nLink Will Auto Delete In 3600Sec...⏰\n▰▱▰▱▰▱▰▱▰▱▰▱▰▱\n\n**'
     try:
         msg = await event.reply_text(answers)
-        await asyncio.sleep(35)
+        await asyncio.)
         await event.delete()
         await msg.delete()
     except:
@@ -77,7 +77,7 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[
-						InlineKeyboardButton("Updates Channel", url="https://t.me/LazyDeveloper")
+						InlineKeyboardButton("Updates Channel", url="https://t.me/z_harbour")
 					],
 					[
 						InlineKeyboardButton("Connect Admin", url="https://t.me/LazyDeveloper"),
@@ -94,10 +94,10 @@ async def button(bot, cmd: CallbackQuery):
 			reply_markup=InlineKeyboardMarkup(
 				[
 					[   InlineKeyboardButton("Help", callback_data="Help_msg"),
-						InlineKeyboardButton("Updates Channel", url="https://t.me/LazyDeveloper")
+						InlineKeyboardButton("Updates Channel", url="https://t.me/z_harbour")
 					], 
                     [
-						InlineKeyboardButton("Connect Admin", url="https://t.me/LazyDeveloper"),
+						InlineKeyboardButton("👨‍💻 DEVELOPER", url="https://t.me/sigma_male_007"),
 						InlineKeyboardButton("🏠Home", callback_data="gohome")
 					]
 				]
@@ -115,7 +115,7 @@ async def button(bot, cmd: CallbackQuery):
 						InlineKeyboardButton("About", callback_data="About_msg")
 					],
 					[
-						InlineKeyboardButton("Support Channel", url="https://t.me/LazyPrincessSupport"),
+						InlineKeyboardButton("Support Channel", url="https://t.me/z_harbour"),
 					]
 				]
 			),
