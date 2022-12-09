@@ -14,11 +14,11 @@ class Config(object):
     BOT_USERNAME = os.environ.get("BOT_USERNAME")
     BOT_OWNER = int(os.environ.get("BOT_OWNER"))
     DATABASE_URL = os.environ.get("DATABASE_URL")
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", None)
-    ABOUT_BOT_TEXT = """<b> <a href='https://t.me/LazyUrlHunterrBOT'>Lazy Url Hunterr</a> is an open source project.
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", -100))
+    ABOUT_BOT_TEXT = """<b> <a href='https://t.me/MdiskLinksSearchBot'>MdiskLinksSearchBot</a> is an open source project.
 
     Devs: 
-        <a href='https://t.me/mRiderDM'>❤️ LazyDeveloper ❤️</a>
+        <a href='https://t.me/sigma_male_007'>❤️ PyroDeveloper ❤️</a>
     
     
 🤖 My Name: <a href='https://t.me/Official_Movies_Group'>Mdisk Search Robot</a>
@@ -27,45 +27,41 @@ class Config(object):
 
 📚 Library: <a href='https://docs.pyrogram.org'>Pyrogram</a>
 
-📡 Server: <a href='https://heroku.com'>Heroku</a>
+📡 Serve: <a href='https://heroku.com'>Microsoft Azure</a>
 
 📡 Server 2: <a href='https://heroku.com'>koyeb</a> <i>comming soon</i>
 
-👨‍💻 Developer Channel: <a href='https://t.me/LazyDeveloper'>LazyDeveloper</a></b>
+👨‍💻 Developer Main Channel: <a href='https://t.me/z_harbour'>Z_Harbour</a></b>
 """
 
-    ABOUT_HELP_TEXT = """<b>💋 Developer : <a href='https://t.me/LazyDeveloper'>LazyDeveloper</a>
+    ABOUT_HELP_TEXT = """<b>❤️Developer❤️ : <a href='https://t.me/sigma_male_007'>PyroDeveloper</a>
 
 If You Want Your Own Bot Like This Then You Can Contact Our Developer.</b>
 """
 
     HOME_TEXT = """
-<b>Hello Baby ! {}😅,
+<b>I am Started Dear! {}😙,
 
-I'm the one and only fastest URL finder BOT. Add me to any Group and Give me Hunting rights !!
 
-I will be only yours if you will restrict adding me to other groups.
-Go to @BotFather to change settings.
 
 Don't be sad ! Your all urls are in safe Hand.
 
 »»» <b>Happy Hunting</b> «««
 
-🔺Thank You <a href='https://t.me/LazyDeveloper'>LazyDeveloper</a>🔺 </b>
+🔺Thank You For Operating Me<a href='https://t.me/LazyDeveloper'>LazyDeveloper</a>🔺 </b>
 """
 
 
     START_MSG = """
-<b>Hello Baby ! {}😅,
+<b>Hello Dear! {}😘,
 
-I'm the one and only fastest URL & post finder BOT. Add me to any Group and Give me Hunting rights !!
+I'm the one and only fastest URL & Movies-Series Links finder BOT On TG. Add me to any Group and Give me Operating rights !!
 
 Don't be sad ! Your all urls are in safe Hand.</b>
 
-   »»»» <b>Happy Hunting</b> ««««
+   »»»» <b>Happy Operating Dear {} </b> ««««
 
-💸<b>Donate us to Keep service Alive.💸</b>
-»» A small amount of ₹5 - ₹20 - ₹50 - ₹100 will be great help !
+
 🔺 Thank You 🔺 
 """
 
