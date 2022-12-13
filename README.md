@@ -41,7 +41,7 @@ You can deploy this bot anywhere.
  <p>
    <pre>gunicorn app:app & python3 main.py</pre>
  <br>
- <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/sigmamale007/AyushMdisk/AyushMdisk&branch=main&nameAyushMdisk="><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
+ <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/sigmamale007/AyushMdisk&branch=main&name=AyushMdisk"><img alt="Deploy to Koyeb" src="https://binbashbanana.github.io/deploy-buttons/buttons/remade/koyeb.svg"></a>
  </p>
 </details>
 
