@@ -1,6 +1,6 @@
 echo "Cloning Repo...."
-git clone https://github.com/LazyDeveloperr/LazyUrlHunterrBOT.git /LazyUrlHunterrBOT
+git clone https://github.com/sigmamale007/AyushMdisk.git /AyushMdisk
 cd /LazyUrlHunterrBOT
 pip3 install -U -r requirements.txt
-echo "⚡️⚡️ Starting LazyUrlHunterrBOT..."
+echo "⚡️⚡️ Starting AyushMdisk..."
 python3 main.py
