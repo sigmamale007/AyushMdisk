@@ -27,7 +27,7 @@ class Config(object):
 
 📚 Library: <a href='https://docs.pyrogram.org'>Pyrogram</a>
 
-📡 Serve: <a href='https://heroku.com'>Microsoft Azure</a>
+📡 Server: <a href='https://Microsoft.in'>Microsoft Azure</a>
 
 📡 Server 2: <a href='https://heroku.com'>koyeb</a> <i>comming soon</i>
 
@@ -48,7 +48,7 @@ Don't be sad ! Your all urls are in safe Hand.
 
 »»» <b>Happy Hunting</b> «««
 
-🔺Thank You For Operating Me<a href='https://t.me/LazyDeveloper'>LazyDeveloper</a>🔺 </b>
+🔺 Alternate BOT <a href='https://t.me/Mdisk_Links_Sender_Bot'>Mdisk_Links_Sender_Bot</a>🔺 </b>
 """
 
 
